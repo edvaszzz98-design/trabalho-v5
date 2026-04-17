@@ -1,0 +1,157 @@
+HTML: <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Edvan</h1>
+
+    <nav>
+        <a href="#">Sobre</a>
+        <a href="#">Projetos</a>
+    </nav>
+
+  </header>
+  
+
+  <h2 class="sobre">Sobre Mim</h2>
+
+  <img src="ed.jpg" class="foto">
+
+  <p class="descricao">
+    Meu nome é Edvan, tenho 23 anos e estou fazendo o curso de Desenvolvimento de Sistemas.
+</p>
+
+<h2 class="projetos">Meus Projetos</h2>
+
+<div class="cards">
+
+  <div class="card">
+    <h3>Portfólio Pessoal</h3>
+    <p>UMeu primeiro site usando HTML, CSS e JavaScript.</p>
+    <a href="#">Ver no GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3>Projeto de Estudos</h3>
+    <p>Sistema simples feito durante o curso.</p>
+    <a href="#">Ver no GitHub</a>
+  </div>
+
+</div>
+
+<footer>
+    ©️ 2026 - Edvan
+  </footer>
+
+</body>
+</html>
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(196, 88%, 84%);
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header { 
+    background-color: white;
+    color: black;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sobre {
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+
+.descricao {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.projetos {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-top: 230px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+}

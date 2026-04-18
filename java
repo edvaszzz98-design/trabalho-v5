@@ -40,3 +40,24 @@ function Projetos() {
 }
 
 export default Projetos;
+import Sobre from "./components/Sobre";
+import Projetos from "./components/Projetos";
+
+function App() {
+  return (
+    <div>
+      <header>
+        <h1>Edvan</h1>
+      </header>
+
+      <Sobre />
+      <Projetos />
+
+      <footer>
+        <p>© 2026 - Edvan</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
